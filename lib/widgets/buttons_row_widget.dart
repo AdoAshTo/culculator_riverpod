@@ -29,7 +29,20 @@ class ButtonsRowWidget extends ConsumerWidget {
 
   void onClickedButton(String buttonText, WidgetRef ref) {
     final calculator = ref.read(calculatorProvider.notifier);
-    calculator.append(buttonText);
+    switch (buttonText) {
+      case 'AC':
+        calculator.reset();
+        break;
+      case '()':
+      break;
+      case '=':
+        calculator.equal();
+        break;
+      case '<':
+        break;
+      default:
+        calculator.append(buttonText);
+    }
   }
 
   @override
