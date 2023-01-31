@@ -39,6 +39,7 @@ class ButtonsRowWidget extends ConsumerWidget {
         calculator.equal();
         break;
       case '<':
+      calculator.delete();
         break;
       default:
         calculator.append(buttonText);

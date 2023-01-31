@@ -12,6 +12,7 @@ class ResultWidget extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           SingleChildScrollView(
@@ -32,6 +33,7 @@ class ResultWidget extends ConsumerWidget {
               fontSize: 36,
               color: MyColors.textColor,
             ),
+            textAlign: TextAlign.right,
           ),
         ],
       ),

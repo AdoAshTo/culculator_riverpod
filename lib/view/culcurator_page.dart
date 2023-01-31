@@ -21,7 +21,7 @@ class CulCulatorPage extends ConsumerWidget {
       body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
+        children: const [
           Expanded(child: ResultWidget()),
           Expanded(flex: 2, child: ButtonsWidget()),
         ],
